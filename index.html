@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>My Weather Application</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
       <main>
         <div class="weather">
           <div>
-            <h1 id="city">Antwerp</h1>
+            <h1 id="city"></h1>
             <p>
               Wednesday 14:30, sunny <br />Humidity:
               <span class="humidity">60%</span>, Wind:
@@ -32,7 +33,7 @@
           </div>
           <div>
             <span class="icon">☀</span>
-            <span class="highlighted-temperature">20</span>
+            <span class="highlighted-temperature" id="temperature"></span>
             <span class="celsius">°C</span>
           </div>
         </div>
