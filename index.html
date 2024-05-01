@@ -4,38 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>My Weather Application</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" id="enter-city" placeholder="Enter a city..." />
-        <input type="submit" value="Search City" />
-      </form>
-    </header>
-    <main>
-      <h1>Antwerp</h1>
-      <p>Wednesday 14:30, cloudy <br />Humidity: 60% <br />Wind: 3km/h</p>
-      <div>☀ 20°C</div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/NinaDlvx" target="_blank">Nina Delvaux</a>
-        and is
-        <a
-          href="https://github.com/NinaDlvx/Vanilla-Weather-Search-Homework"
-          target="_blank"
-        >
-          on GitHub</a
-        >
-        and
-        <a
-          href="https://main--my-weather-search-engine-homework.netlify.app/"
-          target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+    <div class="container">
+      <header>
+        <form>
+          <input
+            type="search"
+            id="enter-city"
+            placeholder="Enter a city..."
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather">
+          <div>
+            <h1>Antwerp</h1>
+            <p>
+              Wednesday 14:30, sunny <br />Humidity:
+              <span class="humidity">60%</span>, Wind:
+              <span class="wind">3km/h</span>
+            </p>
+          </div>
+          <div>
+            <span class="icon">☀</span>
+            <span class="highlighted-temperature">20</span>
+            <span class="celsius">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/NinaDlvx" target="_blank">Nina Delvaux</a
+          >,
+          <a
+            href="https://github.com/NinaDlvx/Vanilla-Weather-Search-Homework"
+            target="_blank"
+            ><br />
+            open-sourced on GitHub</a
+          >
+          and
+          <a
+            href="https://main--my-weather-search-engine-homework.netlify.app/"
+            target="_blank"
+            >hosted on Netlify</a
+          >.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
