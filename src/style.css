@@ -5,7 +5,7 @@ body {
 }
 .container {
   background-color: #f0fbff;
-  margin: 5% 15%;
+  margin: 5% auto;
   max-width: 75%;
   padding: 5% 5% 2%;
   border-radius: 20px;
@@ -63,24 +63,23 @@ p {
   font-weight: 900;
 }
 .icon {
-  font-size: 40px;
+  font-size: 30px;
   color: black;
   position: relative;
-  left: -10px;
-  bottom: -30px;
+  top: 20px;
+  left: 10px;
 }
 
 .highlighted-temperature {
   font-size: 80px;
   color: black;
   position: relative;
-  bottom: -30px;
 }
 .celsius {
   font-size: 30px;
   color: black;
   position: relative;
-  top: -8px;
+  top: -35px;
 }
 
 footer {
